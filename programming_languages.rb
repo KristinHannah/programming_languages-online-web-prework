@@ -7,7 +7,7 @@ def reformat_languages(languages)
        type.each do |key, value|
          unless new_hash.include?(name) 
            new_hash[name] = {key => value}
-           new_hash[name] = {:style => [styles]}
+           new_hash[name][:style] = [styles]
            binding.pry
     #  new_hash[name][:style] ||= new_hash[name][key][value]  # && new_hash[:style][styles]
        end 
