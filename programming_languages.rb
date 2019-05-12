@@ -9,8 +9,8 @@ def reformat_languages(languages)
          if new_hash.include?(name)
            new_hash[name][:style] << styles
          else
-        new_hash[name] = {key => value}
-        new_hash[name][:style] = [styles]
+            new_hash[name] = {key => value}
+            new_hash[name][:style] = [styles]
        #  if new_hash.include?(name)
            new_hash[name][:style] << styles
          #  [[styles]] ||= new_hash[name][:style][[:oo, :functional]]
