@@ -11,6 +11,7 @@ def reformat_languages(languages)
          if new_hash.include?(name)
            new_hash[name][:style] << styles
          #  [[styles]] ||= new_hash[name][:style][[:oo, :functional]]
+       end
         end
        end 
        end 
