@@ -5,7 +5,10 @@ def reformat_languages(languages)
   languages.each do |styles, lang|
     lang.each do |name, type|
        type.each do |key, value|
+         unless new_hash.include?(name) 
+           new_hash[name][key] = value
       new_hash[name][:style] ||= new_hash[name][key][value] && new_hash[:style][styles]
+       end 
        end 
      end
     end 
@@ -17,7 +20,7 @@ end
  # languages.each do |styles, lang|
  #   lang.each do |name, type|
  #      type.each do |key, value|
-  #       unless new_hash.include?(name) || =
+  #       unless new_hash.include?(name) 
   #         new_hash[name] = {key => value, :style => [styles]}
    #        unless new_hash[name][:style].include?(styles)
     #          new_hash[name][:style] << styles
