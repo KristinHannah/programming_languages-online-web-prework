@@ -9,11 +9,10 @@ def reformat_languages(languages)
            new_hash[name] = {key => value}
            new_hash[name][:style] = [styles]
      new_hash[name][:style][styles] ||= new_hash[name][:style][[:oo, :functional]]
-   end
+        end
        end 
        end 
      end
-    end 
   return new_hash
 end
 
