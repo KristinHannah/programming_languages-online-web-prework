@@ -9,7 +9,7 @@ def reformat_languages(languages)
            new_hash[name] = {key => value}
            new_hash[name][:style] = [styles]
            binding.pry
-    #  new_hash[name][:style] ||= new_hash[name][key][value]  # && new_hash[:style][styles]
+     new_hash[name][:style][styles] ||= new_hash[name][:style][[:oo, :functional]
        end 
        end 
      end
