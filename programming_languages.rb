@@ -8,7 +8,7 @@ def reformat_languages(languages)
          unless new_hash.include?(name)
            new_hash[name] = {key => value, :style => [styles]}
          if lang.include?(name) && new_hash[name][:style] != styles 
-           new_hash[name][:style] << styles
+            new_hash[name][:style] << styles
          end 
          end
        end 
